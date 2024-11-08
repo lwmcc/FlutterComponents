@@ -92,12 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Image(
+              // TODO: will send URL in from app
+              image: NetworkImage("https://i.scdn.co/image/ab67616d0000b27382ea2e9e1858aa012c57cd45")
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const Text(
+              'Larry McCarty'
             ),
           ],
         ),
